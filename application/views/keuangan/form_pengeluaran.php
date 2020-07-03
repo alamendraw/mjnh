@@ -54,7 +54,7 @@
                                     <div class="form-group">
                                         <label>Nilai pengeluaran</label>
                                         <div class="controls">
-                                            <input type="text" data-inputmask="'alias': 'decimal', 'groupSeparator': ','"  name="cost" class="form-control" id="cost" placeholder="Nilai Pengeluaran" value="<?php echo ($action=='update')?$data->debet:'';?>" required data-validation-required-message="Nilai Pengeluaran Harus Diisi">
+                                            <input type="text" data-inputmask="'alias': 'decimal', 'groupSeparator': ','"  name="cost" class="form-control" id="cost" placeholder="Nilai Pengeluaran" value="<?php echo ($action=='update')?$data->kredit:'';?>" required data-validation-required-message="Nilai Pengeluaran Harus Diisi">
                                         </div>
                                     </div>
                                      

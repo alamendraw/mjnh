@@ -59,8 +59,8 @@ class Pendapatan extends CI_Controller {
 		$this->output->set_title('Ubah pendapatan');
 		$this->data['title'] = 'Ubah Data pendapatan';  
 		$field = $this->pendapatans->get_data($id)[0];  
-		$this->data['val_ang'] = $this->anggarans->get(['id'=>$field->id_budget]);
-		$this->data['val_rek'] = $this->rekenings->get(['id'=>$field->kd_rek]);
+		// $this->data['val_ang'] = $this->anggarans->get(['id'=>$field->id_budget]);
+		// $this->data['val_rek'] = $this->rekenings->get(['id'=>$field->kd_rek]);
 		$this->data['action'] = 'update';   
 		$this->data['data'] = $field;  
 		$this->load->view('keuangan/form_pendapatan',$this->data);

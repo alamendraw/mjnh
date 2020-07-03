@@ -58,8 +58,8 @@ class Pengeluaran extends CI_Controller {
 		$this->output->set_title('Ubah Pengeluaran');
 		$this->data['title'] = 'Ubah Data Pengeluaran';  
 		$field = $this->pengeluarans->get_data($id)[0];  
-		$this->data['val_ang'] = $this->anggarans->get(['id'=>$field->id_budget]);
-		$this->data['val_rek'] = $this->rekenings->get(['id'=>$field->kd_rek]);
+		// $this->data['val_ang'] = $this->anggarans->get(['id'=>$field->id_budget]);
+		// $this->data['val_rek'] = $this->rekenings->get(['id'=>$field->kd_rek]);
 		$this->data['action'] = 'update';   
 		$this->data['data'] = $field;  
 		$this->load->view('keuangan/form_pengeluaran',$this->data);
