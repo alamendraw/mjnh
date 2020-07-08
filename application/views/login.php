@@ -48,20 +48,20 @@
                                     <div class="card rounded-0 mb-0 px-2">
                                         <div class="card-header pb-1">
                                             <div class="card-title" align="center">
-                                                <h4 class="mb-0">Mosque Management System</h4>
+                                                <h4 class="mb-0">Masjid Jami Nurul Hikmah</h4>
                                             </div>
                                         </div>
                                         <p class="px-2" align="center">Silahkan Login untuk akses sistem </p>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
                                                 <form action="<?php echo site_url('login/signin');?>" autocomplete="off">
-                                                    <fieldset class="form-label-group form-group position-relative has-icon-left">
+                                                   <!--  <fieldset class="form-label-group form-group position-relative has-icon-left">
                                                         <input type="text" class="form-control" id="user-mosque" name="mosque" placeholder="Mosque" required>
                                                         <div class="form-control-position">
                                                             <i class="feather icon-at-sign"></i>
                                                         </div>
                                                         <label for="user-mosque">Mosque</label>
-                                                    </fieldset>
+                                                    </fieldset> -->
                                                     
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
                                                         <input type="text" class="form-control" id="user-name" name="username" placeholder="Username" required>

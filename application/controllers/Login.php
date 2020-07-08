@@ -26,12 +26,12 @@ class Login extends CI_Controller {
 	}
 
 	public function signin(){
-		$mosque 	= $_REQUEST['mosque'];
+		// $mosque 	= $_REQUEST['mosque'];
 		$username 	= $_REQUEST['username'];
 		$password 	= $_REQUEST['password'];
-		$check_mosque = $this->check_mosque($mosque);
-		if($check_mosque){
-			$user = $this->check_user($username, $check_mosque->id);
+		// $check_mosque = $this->check_mosque($mosque);
+		// if($check_mosque){
+			$user = $this->check_user($username);
 			if($user){
 				$verify = $this->verify($user, $password);
 				if ($verify) {
@@ -42,9 +42,9 @@ class Login extends CI_Controller {
 			}else{
 				echo 'Username is Not Registered';
 			}
-		}else{
-			echo 'Mosque is Not Registerd';
-		}
+		// }else{
+		// 	echo 'Mosque is Not Registerd';
+		// }
 		
 	}
 	
@@ -57,9 +57,9 @@ class Login extends CI_Controller {
 		return false;
 	}
 
-	private function check_user($username, $mosque_id)
+	private function check_user($username)
 	{
-		$user = $this->users->get(['username' => $username, 'mosque_id' => $mosque_id]);
+		$user = $this->users->get(['username' => $username]);
 		if ($user) {
 		return $user;
 		}
