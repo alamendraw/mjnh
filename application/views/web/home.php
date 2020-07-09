@@ -70,7 +70,7 @@
                             <div class="col-md-10 col-sm-12">
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><strong>Dzuhur</strong></li>
-                                    <li class="list-inline-item">12:00 Wib</li>
+                                    <li class="list-inline-item"><span id="dzuhur"></span> Wib</li>
                                 </ul>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                             <div class="col-md-10 col-sm-12">
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><strong>Ashar</strong></li>
-                                    <li class="list-inline-item">15:30 Wib</li>
+                                    <li class="list-inline-item"><span id="ashar"></span> Wib</li>
                                 </ul>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                             <div class="col-md-10 col-sm-12">
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><strong>Maghrib</strong></li>
-                                    <li class="list-inline-item">18:00 Wib</li>
+                                    <li class="list-inline-item"><span id="maghrib"></span> Wib</li>
                                 </ul>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                             <div class="col-md-10 col-sm-12">
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><strong>Isya</strong></li>
-                                    <li class="list-inline-item">19:15 Wib</li>
+                                    <li class="list-inline-item"><span id="isya"></span> Wib</li>
                                 </ul>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                             <div class="col-md-10 col-sm-12">
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><strong>Subuh</strong></li>
-                                    <li class="list-inline-item">04:35 Wib</li>
+                                    <li class="list-inline-item"><span id="subuh"></span> Wib</li>
                                 </ul>
                             </div>
                         </div>
@@ -232,7 +232,7 @@
     <!-- section title starts -->
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="section-title">
                     <div class="title">
                         <h3 style="font-weight: 700">Jadwal Kegiatan</h3>
@@ -258,16 +258,38 @@
 						c2.836-0.152,5.092-2.481,5.092-5.358c0-2.875-2.256-5.203-5.092-5.355v-28.776C373.445,206.493,375.701,204.165,375.701,201.29z"></path>
                         </svg>
                     </div>
+ 
+
+
                     <div class="sub-title col-md-12">
                         <div class="container"> 
                             <ul class="list-group">
-                              <li class="list-group-item"><span style="float:left;">Nama Kegiatan</span><span style="float:right;">Keterangan</span></li> 
-                              <li class="list-group-item"><span style="float:left;">Nama Kegiatan</span><span style="float:right;">Keterangan</span></li> 
-                              <li class="list-group-item"><span style="float:left;">Nama Kegiatan</span><span style="float:right;">Keterangan</span></li> 
-                              <li class="list-group-item"><span style="float:left;">Nama Kegiatan</span><span style="float:right;">Keterangan</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Sholat Fardu 5 Waktu Berjamaah</span><span style="float:right;">Awal Waktu</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Sholat Fardu Jum’at barjamaah</span><span style="float:right;">Awal Waktu</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Sholat Sunah Tarawih</span><span style="float:right;">Ba’da Sholat Isya</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Sholat Sunah Idul Fitri Berjamaah</span><span style="float:right;"> </span></li> 
+                              <li class="list-group-item"><span style="float:left;">Sholat Sunah Idul Adha Berjamaah</span><span style="float:right;"> </span></li> 
+                              <li class="list-group-item"><span style="float:left;">Penerimaan dan Pembagian Zakat Fitrah</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Penyembelihan dan Pembagian Qurban</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Peringatan Maulid Nabi Muhammad SAW</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Peringatan Isra Miraj Nabi Muhammad SAW</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Dzikrul Ghofilin Malam Jumat</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Pembacaan Manaqib Syech Abdul Qodir Jaelani</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Pengajiann Rutin Malam Ahad Ba’da Isya</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Haul Berdirinya Masjid Jamie Nurul Hikmah</span><span style="float:right;">Tanggal 7 Ramadhan</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Dzikrul GHofilin 40 Malam</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Peringatan Nuzulul Qur’an</span><span style="float:right;">(Tanggal 17 Ramadhan)</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Istigosah 1 Muharam</span><span style="float:right;">Tahun Baru Islam</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Malam Nisfu Syaban</span><span style="float:right;">Ba’da Sholat Magrib</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Tadarus Al-Quran Ba’da Sholat Tarawih</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Buka Puasa Bersama</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">LANSIHMAS (Sebulan Bersih-bersih Masjid)</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Sholat Sunah Tolak Bala</span><span style="float:right;">Lebaran Cimplo</span></li> 
+                              <li class="list-group-item"><span style="float:left;">Acara Bubur Sura</span><span style="float:right;"></span></li> 
+                              <li class="list-group-item"><span style="float:left;">Santuan Anak Yatim Piatu dan Duafa</span><span style="float:right;">Tanggal 1 Muharram</span></li> 
                             </ul>
                           </div>
-                    </div>
+                  </div>
 
                 </div>
                 <!-- section_title starts -->
@@ -325,7 +347,24 @@
     <script src="assets/web/js/waypoints.js"></script>
     <script src="assets/web/js/isotope.pkgd.min.js"></script>
     <script src="assets/web/js/main.js"></script>
+    <script type="text/javascript">
 
+        $(document).ready(function() {
+            $.ajax({
+                type:'get',
+                url : 'https://api.pray.zone/v2/times/day.json?longitude=107.5503095&latitude=-6.2644907&elevation=100&date=2020-07-09',
+                dataType:'json',
+                success : function(data){
+                    var time = data.results.datetime[0].times;
+                    $("#dzuhur").html(time.Dhuhr);
+                    $("#ashar").html(time.Asr);
+                    $("#maghrib").html(time.Maghrib);
+                    $("#isya").html(time.Isha);
+                    $("#subuh").html(time.Fajr);
+                }
+            });
+        });
+    </script>
 </body>
 
 
