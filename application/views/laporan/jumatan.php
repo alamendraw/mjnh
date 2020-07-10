@@ -73,8 +73,6 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendors/css/extensions/sweetalert2.css">
 <script type="text/javascript"> 
     url = "<?php echo $url.'/laporan_jumat/';?>";
-    var pil_jum = [];
-
     $( "#date" ).datepicker({
         dateFormat: "dd-mm-yy",
         altFormat: "yy-mm-dd",  
@@ -93,13 +91,7 @@
                     indo_start = dateindo(data[i]['date_start']); 
                     indo_end = dateindo(data[i]['date_end']); 
                     judul = nomor(data[i]['no']);
-
-                    pil_jum[i] = {
-                        no: data[i]['no'],
-                        start: indo_start,
-                        end: indo_end,
-                    };
-                    html += "<option value='"+data[i]['no']+"' >Jum'at "+judul+"</option>";
+                    html += "<option value='"+data[i]['no']+"' onClick='settext("+indo_start+","+indo_end+")'>Jum'at "+judul+"</option>";
                 }
                 $("#jumat").html(html);
             }
@@ -107,16 +99,10 @@
         });
     });
 
-    $("#jumat").on('change', function(){
-        console.log(this.value);
-        for (i =0; i<pil_jum.length; i++) {            
-            if(pil_jum[i].no == this.value){ 
-                $("#desc").html(pil_jum[i].start+' Sampai '+pil_jum[i].end);
-            }
-        }
-    });
+    function settext(start_val,end_val){
+        $("#desc").html(start_val+' Sampai '+end_val);
+    }
 
-    
     function dateindo(tgl){
         year = tgl.substr(0,4);
         month = tgl.substr(5,2);

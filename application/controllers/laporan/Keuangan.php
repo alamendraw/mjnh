@@ -178,13 +178,11 @@ class Keuangan extends CI_Controller {
 				$saldo = $saldo+$row->debet-$row->kredit;
 			}
 			if($row->date == 'h'){ 
-				$tsaldo = ($row->debet - $row->kredit);
-				($tsaldo<0)? $hsaldo = '('.number_format($tsaldo*-1,"0",",",".").')': $hsaldo = number_format($tsaldo,"0",",",".");
 				$cRet .="<tr bgcolor='#93f784'>     
 							<td align='center' colspan='2'><b> $row->description </b></td>  
 							<td align='center' align='right' ><b> $debet </b></td>      
 							<td align='center' align='right' ><b> $kredit </b></td>      
-							<td align='center' align='right' ><b>  $hsaldo </b></td>      
+							<td align='center' align='right' ><b>  ".number_format($saldo,"0",",",".")."</b></td>      
 						</tr>";
 			}else if($row->date == '' && $row->kredit =='0'){ //Saldo awal
 				$cRet .="<tr>  

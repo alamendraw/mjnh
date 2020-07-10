@@ -184,9 +184,8 @@
                 <div class="col-lg-5 offset-lg-1 col-sm-12">
                     <div class="about-content">
                         <div class="wpb_wrapper">
-                            <h2><strong>Tentang Masjid Jamie Nurul Hikmah</strong></h2>
-                            <p>Masjid Jamie Nurul Hikmah</p><br>
-                            <p>Jl. Syekh Quro No.185, Cikalong, Cilamaya Wetan, Kabupaten Karawang, Jawa Barat 40374</p>
+                            <h2><strong>Sejarah Masjid Jamie Nurul Hikmah</strong></h2>
+                            <p>Isi Sejarah Masjid</p>
                            <!--  <ul>
                                 <li>
                                     <div class="abt-srv-list">
